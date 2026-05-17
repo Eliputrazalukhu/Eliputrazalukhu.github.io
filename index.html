@@ -3,100 +3,286 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio resmi Eli Putra Iman Jaya Zalukhu - Mahasiswa Teknik Informatika dan Developer.">
+  <meta name="keywords" content="Eli Putra, Portfolio, Teknik Informatika, Developer, GitHub, LinkedIn">
+  <meta name="author" content="Eli Putra Iman Jaya Zalukhu">
+
   <title>Eli Putra Iman Jaya Zalukhu</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body{
+    *{
       margin:0;
-      font-family:Arial;
-      background:#0f172a;
-      color:white;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#f3f4f6;
+      color:#111827;
+    }
+
+    header{
+      background:linear-gradient(135deg,#ffffff,#d1d5db);
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
       text-align:center;
+      padding:20px;
     }
 
-    .container{
-      padding:50px 20px;
+    .hero{
+      max-width:900px;
     }
 
-    img{
-      width:150px;
-      height:150px;
+    .profile{
+      width:170px;
+      height:170px;
       border-radius:50%;
-      border:4px solid white;
+      border:6px solid white;
       object-fit:cover;
+      box-shadow:0 10px 30px rgba(0,0,0,0.2);
+      margin-bottom:25px;
     }
 
     h1{
-      margin-top:20px;
-      font-size:35px;
+      font-size:50px;
+      margin-bottom:15px;
+      color:#111827;
+    }
+
+    .typing{
+      font-size:22px;
+      color:#374151;
+      margin-bottom:25px;
+      font-weight:500;
     }
 
     p{
-      color:#cbd5e1;
-      max-width:600px;
-      margin:auto;
-      line-height:1.8;
+      line-height:1.9;
+      color:#4b5563;
+    }
+
+    .btn-group{
+      margin-top:35px;
+      display:flex;
+      justify-content:center;
+      gap:15px;
+      flex-wrap:wrap;
     }
 
     .btn{
-      display:inline-block;
-      margin-top:20px;
-      padding:12px 25px;
-      background:#2563eb;
-      color:white;
+      padding:14px 30px;
+      border-radius:12px;
       text-decoration:none;
-      border-radius:10px;
+      font-weight:600;
+      transition:0.3s;
+      display:inline-block;
     }
 
-    .btn:hover{
-      background:#1d4ed8;
+    .btn-primary{
+      background:#111827;
+      color:white;
+    }
+
+    .btn-primary:hover{
+      background:#000;
+      transform:translateY(-3px);
+    }
+
+    .btn-secondary{
+      background:white;
+      color:#111827;
+      border:2px solid #111827;
+    }
+
+    .btn-secondary:hover{
+      background:#111827;
+      color:white;
+      transform:translateY(-3px);
+    }
+
+    section{
+      padding:80px 20px;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:50px;
+      font-size:38px;
+      color:#111827;
+    }
+
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
     }
 
     .card{
-      background:#1e293b;
-      margin:20px auto;
-      padding:20px;
-      border-radius:15px;
-      max-width:700px;
+      background:white;
+      padding:30px;
+      border-radius:20px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#111827;
+    }
+
+    .skills span{
+      display:inline-block;
+      background:#e5e7eb;
+      padding:10px 15px;
+      border-radius:10px;
+      margin:8px;
+      font-weight:500;
+    }
+
+    footer{
+      background:#111827;
+      color:white;
+      text-align:center;
+      padding:30px 20px;
+    }
+
+    @media(max-width:768px){
+      h1{
+        font-size:34px;
+      }
+
+      .typing{
+        font-size:18px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<div class="container">
+<header>
+  <div class="hero">
 
-  <img src="https://i.imgur.com/2DhmtJ4.png">
+    <img src="https://i.imgur.com/2DhmtJ4.png" class="profile">
 
-  <h1>ELI PUTRA IMAN JAYA ZALUKHU</h1>
+    <h1>ELI PUTRA IMAN JAYA ZALUKHU</h1>
 
+    <div class="typing">
+      Mahasiswa Teknik Informatika | Web Developer | Android Developer
+    </div>
+
+    <p>
+      Saya adalah mahasiswa Teknik Informatika yang tertarik pada dunia teknologi,
+      pengembangan website, database, aplikasi Android, dan sistem informasi modern.
+    </p>
+
+    <div class="btn-group">
+
+      <a href="https://www.linkedin.com/in/eli-putra-zalukhu" target="_blank" class="btn btn-primary">
+        LinkedIn Saya
+      </a>
+
+      <a href="https://wa.me/6282278205711" target="_blank" class="btn btn-secondary">
+        WhatsApp
+      </a>
+
+    </div>
+
+  </div>
+</header>
+
+<section>
+  <div class="container">
+
+    <h2 class="title">Tentang Saya</h2>
+
+    <div class="card">
+      <p>
+        Saya sedang belajar dan mengembangkan kemampuan di bidang pemrograman,
+        pengembangan aplikasi Android, website modern, dan database.
+        Saya memiliki minat besar untuk menjadi developer profesional.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2 class="title">Skill</h2>
+
+    <div class="card skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Java</span>
+      <span>MySQL</span>
+      <span>Android Studio</span>
+      <span>GitHub</span>
+      <span>Database</span>
+      <span>UI Design</span>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2 class="title">Project</h2>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <h3>Sistem Informasi Sekolah</h3>
+        <p>
+          Aplikasi sistem informasi sekolah untuk orang tua siswa agar dapat melihat nilai,
+          absensi, dan informasi akademik.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Aplikasi Koperasi</h3>
+        <p>
+          Sistem koperasi berbasis database dengan fitur pinjaman,
+          simpanan, dan laporan.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Game Android</h3>
+        <p>
+          Pengembangan game Android menggunakan Unity dan Android Studio.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<footer>
   <p>
-    Mahasiswa Teknik Informatika yang tertarik pada dunia teknologi,
-    pemrograman, database, dan pengembangan website.
+    © 2026 Eli Putra Iman Jaya Zalukhu | Portfolio Website
   </p>
-
-  <a class="btn" href="https://www.linkedin.com" target="_blank">
-    LinkedIn Saya
-  </a>
-
-  <div class="card">
-    <h2>Tentang Saya</h2>
-
-    <p>
-      Saya sedang belajar membuat aplikasi Android,
-      website, database, dan sistem informasi.
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>Skill</h2>
-
-    <p>
-      HTML, CSS, Java, MySQL, Android Studio, GitHub
-    </p>
-  </div>
-
-</div>
+</footer>
 
 </body>
 </html>
